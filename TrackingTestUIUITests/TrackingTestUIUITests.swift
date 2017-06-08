@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import TrackingTestUI
 
 class TrackingTestUIUITests: XCTestCase {
         
@@ -29,8 +30,33 @@ class TrackingTestUIUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        var count = 0
+        XCTAssertTrue(
+            XCUIApplication()
+                .staticTexts["omniture_uitest_\(count)" + Omniture(mode: .pagename, name: "ViewController").description]
+                .exists
+        )
+        count += 1
+        
+        XCUIApplication().navigationBars.buttons["Item"].tap()
+        
+        XCTAssertTrue(
+            XCUIApplication()
+                .staticTexts["omniture_uitest_\(count)" + Omniture(mode: .pagename, name: "ViewController").description]
+                .exists
+        )
+        count += 1
+        
+        XCUIApplication().navigationBars.buttons.element(boundBy: 0).tap()
+
+        XCTAssertTrue(
+            XCUIApplication()
+                .staticTexts["omniture_uitest_\(count)" + Omniture(mode: .pagename, name: "ViewController").description]
+                .exists
+        )
+        count += 1
+        
+                
     }
     
 }

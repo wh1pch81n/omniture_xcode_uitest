@@ -14,6 +14,8 @@
 		7F81D94D1EE8D1F400359EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F81D94B1EE8D1F400359EFE /* LaunchScreen.storyboard */; };
 		7F81D9581EE8D1F400359EFE /* TrackingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F81D9571EE8D1F400359EFE /* TrackingTestUITests.swift */; };
 		7F81D9631EE8D1F400359EFE /* TrackingTestUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F81D9621EE8D1F400359EFE /* TrackingTestUIUITests.swift */; };
+		7F81D9711EE8DCF300359EFE /* Omniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F81D9701EE8DCF300359EFE /* Omniture.swift */; };
+		7F81D9721EE8DD0600359EFE /* Omniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F81D9701EE8DCF300359EFE /* Omniture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		7F81D95E1EE8D1F400359EFE /* TrackingTestUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackingTestUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F81D9621EE8D1F400359EFE /* TrackingTestUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingTestUIUITests.swift; sourceTree = "<group>"; };
 		7F81D9641EE8D1F400359EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F81D9701EE8DCF300359EFE /* Omniture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Omniture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 			children = (
 				7F81D9421EE8D1F400359EFE /* AppDelegate.swift */,
 				7F81D9441EE8D1F400359EFE /* ViewController.swift */,
+				7F81D9701EE8DCF300359EFE /* Omniture.swift */,
 				7F81D9461EE8D1F400359EFE /* Main.storyboard */,
 				7F81D9491EE8D1F400359EFE /* Assets.xcassets */,
 				7F81D94B1EE8D1F400359EFE /* LaunchScreen.storyboard */,
@@ -256,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F81D9711EE8DCF300359EFE /* Omniture.swift in Sources */,
 				7F81D9451EE8D1F400359EFE /* ViewController.swift in Sources */,
 				7F81D9431EE8D1F400359EFE /* AppDelegate.swift in Sources */,
 			);
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F81D9721EE8DD0600359EFE /* Omniture.swift in Sources */,
 				7F81D9631EE8D1F400359EFE /* TrackingTestUIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
